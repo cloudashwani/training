@@ -1,6 +1,6 @@
 package ducat.training;
 
-public class Application extends App {
+public class Application extends BaseApplication {
 	int age;
 	
 	Application(int a){
@@ -9,5 +9,10 @@ public class Application extends App {
 	
 	void setAge(int a){
 		age =a;
+	}
+	
+	@Override
+	public String getApplicationName() {
+		return "DucatApplication";
 	}
 }
