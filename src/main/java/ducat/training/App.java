@@ -10,6 +10,5 @@ public class App {
 		
 		System.out.println(applicationFeature1);
 		System.out.println(applicationName);
-		BaseApplication app1 = new BaseApplication();
 	}
 }
