@@ -9,7 +9,7 @@ public interface Math {
 		System.out.println("Math.test1()");
 	}
 	
-	public static void main(String[] args) {
-		System.out.println("Math.main()");
+	static void staticMethod() {
+		System.out.println("Math.staticMethod()");
 	}
 }

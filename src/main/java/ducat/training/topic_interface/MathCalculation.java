@@ -9,5 +9,9 @@ public interface MathCalculation {
 	default  void test1() {
 		System.out.println("MathCalculation.test1()");
 	}
+	
+	static void staticMethod() {
+		System.out.println("Math.staticMethod()");
+	}
 
 }
