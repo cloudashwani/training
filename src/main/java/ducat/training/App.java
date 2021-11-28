@@ -3,12 +3,16 @@ package ducat.training;
 public class App {
 
 	public final static void main(String[] args) {
+		CarFactory model1  = CarFactory.CarModel1;
+		System.out.println(model1.getDetails());
+		AdvanceCarFactory carmodel1 = AdvanceCarFactory.CARMODEL3;
+		System.out.println(carmodel1.getDetails());
+		System.out.println(carmodel1.name());
+		System.out.println(carmodel1.ordinal());
 		
-		Application app = new Application(10);
-		String applicationFeature1 = app.getApplicationFeature1();
-		String applicationName = app.getApplicationName();
+		AdvanceCarFactory m = Enum.valueOf(AdvanceCarFactory.class, "CARMODEL3");
+		System.out.println(m);
 		
-		System.out.println(applicationFeature1);
-		System.out.println(applicationName);
 	}
 }
+
