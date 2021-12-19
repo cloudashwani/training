@@ -1,6 +1,6 @@
 trycatchfinally
 try- empty trycatch block are valid
-try {
+		try {
 			
 		}
 		catch(Exception e) {
