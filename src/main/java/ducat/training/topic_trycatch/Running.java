@@ -9,14 +9,21 @@ public class Running {
 //		System.out.println(age);
 //		
 //		
-		checkUnCheckedException(10);
+//		checkUnCheckedException(10);
+//		
+//		try {
+//			check(10_000);
+//		} catch (SalaryException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		
-		try {
-			check(10_000);
-		} catch (SalaryException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		Employee e = new Employee();
+		Employee e1 = new Employee();
+		e = e1;
+		System.out.println("end");
+		Runtime.getRuntime().gc();
+		
 	}
 
 

@@ -38,5 +38,14 @@ class child extends parent{
 		
 	}
 	
+	Finalize method : override from Object class
+	- use as destructor in class
+	- It is called during the time of GC running
+	- we can request to GC for run by using - Runtime.getRuntime().gc(); 
+	 
+	
+	protected void finalize() throws Throwable {
+
+	
 
 	
