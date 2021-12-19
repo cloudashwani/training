@@ -1,10 +1,12 @@
 package ducat.training.threading;
 
 public class RunnableTask implements Runnable {
+	Shared s ;
+	public RunnableTask(Shared s) {
+		this.s=s;
+	}
+
 	public void run() {
-		for (int i = 0; i < 10; i++) {
-			Thread currentThread = Thread.currentThread();
-			System.out.println(currentThread.getName()+"-"+i);
-		}
+		s.print();
 	}
 }

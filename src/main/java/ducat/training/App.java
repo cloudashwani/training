@@ -13,6 +13,9 @@ public class App {
 		AdvanceCarFactory m = Enum.valueOf(AdvanceCarFactory.class, "CARMODEL3");
 		System.out.println(m);
 		
+		Calculation1 cal = new Calculation1();
+		cal.add(1,2,3,4);
+		
 	}
 }
 

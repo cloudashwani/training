@@ -8,6 +8,7 @@ public class Calculation1 extends Calculation {
 	 void add(int a, int b) {
 		System.out.println("Add=" + (a+b));
 	}
+@Deprecated
 	void add(int a, int b,int c, int d) {
 		System.out.println("Add=" + (a+b+c+d));
 	}
