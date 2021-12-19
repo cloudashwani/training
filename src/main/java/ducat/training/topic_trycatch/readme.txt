@@ -14,12 +14,29 @@ try {
 - trywith finally also valid
 - finally block always executed in last 
 	- system.exit(), in this case finally block not executed
-	- return statement -> always taking override in case, case of catch and try have their return statements
+	- return statement -> always finally used return statments.
 - single catch have multiple exception class using pipe operator (|)
 	- don't define the parent class with same level of child class (catch(NullPointerException | ArithmeticException | Exception e) {)
 - try with resources
-	- use bracket and define the autocloseable Class Objects
-	- It automatically call the close method in case of last statment or exception occur
+	- use bracket try() and implements autocloseable interface
+	- It automatically call the close() method in case of last statment or exception occur in try block
+- checked and unchecked exception
+	Unchecked - No need to put in try and catch
+	Checked - Must be handle it with try and catch 
+	throws ExceptionClaass -  defined on the top of method to pass the exception to calling parent.
+	throw new Exception()-  class object
+	Overriden method should be have child exception class
+	
+	
+class parent{
+	void check() throws Exception{
+		
+	}
+}
+class child extends parent{
+	public void check() throws NullPointerException{
+		
+	}
 	
 
 	
