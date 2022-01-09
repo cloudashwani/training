@@ -19,6 +19,7 @@ public class EmployeeImmutable {
 	public int getAge() {
 		return age;
 	}
+	 
 	
 	public int getSalary() {
 		return salary;
